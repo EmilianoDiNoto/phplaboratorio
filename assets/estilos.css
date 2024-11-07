@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Lalezar&family=Poppins:wght@300&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header, main{
+  padding: 20px calc( ( 100vw - 850px ) / 2);
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+}
+
+header h1{
+  color: white;
+}
+
+header nav > ul{
+  display: flex;
+}
+
+header nav > ul li{
+  position: relative;
+}
+
+header nav > ul a{
+  display: block;
+  padding: .75em 1em;
+  line-height: 1em;
+  text-decoration: none;
+  color: #D13B5F;
+}
+
+header nav > ul a:hover{
+  color: #FF5DAD;
+}
+
+header nav > ul li ul{
+  position: absolute;
+  background: white;
+  box-shadow: 0 0 10px black;
+  left: 0;
+  top: 2.5em;
+  display: none;
+}
+
+header nav > ul li:hover ul{
+  display: block;
+}
+
+header nav > ul li ul a{
+  min-width: 120px;
+}
+
+header nav > ul li ul a:hover{
+  color: white;
+  background: #D13B5F;
+}
+
+h1, h2, h3{
+  margin: 0.5em 0;
+}
+
+section:not(:last-child){
+  margin-bottom: 4rem;
+}
+
+form > div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 7px;
+}
+
+form > div label{
+  width: 100px;
+}
+
+form > div label + input{
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  width: 400px;
+}
+
+form > div.buttons{
+  padding-left: 110px;
+}
+
+form > div.buttons button{
+  padding: 8px 30px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+table{
+  margin-top: 1rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td,
+table th{
+  padding: 4px 9px;
+  border: 1px solid #aaa;
+}
+
+table th{
+  background: #344D76;
+  color: white;
+  text-align: left;
+  font-weight: normal;
+}
+
+table td:nth-child(2){
+  width: 40%
+}
+
+table td a{
+  text-decoration: none;
+  color: #344D76;
+}
+
+table td a:hover{
+  text-decoration: underline;
+}
+
+[type=submit]{
+  background: #4B6F3E;
+  color: white;
+}
+
+[type=button]{
+  background: #222222;
+  color: white;
+}
+
+[type=submit]:hover{
+  background: color-mix(in srgb, 5% white, 95% #4B6F3E)
+}
+
+[type=button]:hover{
+  background: color-mix(in srgb, 5% white, 95% #222222)
+}
+
+.subtitle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+}
+
+.stats{
+  display: flex;
+  gap: 30px;
+}
+
+.stats li{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-width: 150px;
+  border: 1px solid #ededed;
+  padding: 1rem;
+  border-radius: .4rem;
+  color: white;
+}
+
+.stats li span{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.stats li:nth-child(1){
+  background: #4393CB;
+}
+
+.stats li:nth-child(2){
+  background: #CB4364;
+}
+
+.stats li:nth-child(3){
+  background: #649555;
+}
+
+.stats li:nth-child(4){
+  background: #CBB243;
+}
+
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.video-item {
+  width: 200px;
+  text-align: center;
+}
+
+.video-item img {
+  width: 100%;
+  height: auto;
+}
